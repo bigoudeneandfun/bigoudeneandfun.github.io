@@ -1,7 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Bigoudène & FUN</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Nous contacter | Bigoudène & FUN</title>
+
+		<link rel="stylesheet" type="text/css" href="../style.css">
 		<script type="text/javascript">
 			function validateForm()                                    
 			{ 
@@ -54,10 +59,17 @@
 			}
 		</script>
 		<style>
+			h1{
+				padding: 70px;
+				text-align: center;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+
 			.formulaire {
+			  
 			  margin:10px auto ;
 			  width: 400px;
-			  padding: 20px 12px 10px 20px;
+			  padding: 0px 12px 150px 20px;
 			  font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 			}
 
@@ -96,10 +108,6 @@
 			  border:1px solid #BEBEBE;
 			  padding: 7px;
 			  margin:0px;
-			  -webkit-transition: all 0.30s ease-in-out;
-			  -moz-transition: all 0.30s ease-in-out;
-			  -ms-transition: all 0.30s ease-in-out;
-			  -o-transition: all 0.30s ease-in-out;
 			  outline: none;  
 			}
 			.formulaire .long{
@@ -117,19 +125,28 @@
 			  color: #D8000C;
 			  background-color: #FFBABA;
 			}
+
+			.BigLogo {
+				position :absolute;
+				top: 150px;
+				left : 200px;
+				width: 300px;
+			}
 		</style>
 	</head>
 	<body>
 		<header> 
 			<nav>
-				<a href="../index.html">Accueil</a> |
-				<a href="../sites/StMalo.html">St Malo</a> |
-				<a href="../sites/MontStMichel.html">Mont St Michel</a> |
-				<a href="../sites/Broceliande.html">Brocéliande</a> |
+				<a class="navi inactive" href="../index.html">Accueil</a> 
+				<a class="navi inactive" href="../sites/StMalo.html">Saint Malo</a> 
+				<a class="navi inactive" href="../sites/MontStMichel.html">Mont-Saint-Michel</a> 
+				<a class="navi inactive" href="../sites/Broceliande.html">Brocéliande</a> 
 			</nav>
 		</header>
-		<hr>
+
 		<main>
+			<h1>NOUS CONTACTER</h1>
+			<img src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN" class="BigLogo"/>
 			<form name="contact" class="formulaire" onsubmit="return validateForm()">
 				<label>
 					Votre nom : <span class="required">*</span>
@@ -152,13 +169,13 @@
 				<input type="submit" value="Envoyer"/>
 			</form>
 		</main>	
-		<hr>
+
 		<footer>
-			<p>
-			(c) Bigoudène & Fun 2020 |
-			<a href="./MentionsLegales.html">Mention légales</a> |
-			<a href="Contact.html">Nous contacter</a> |
-			Mise à jour : 04/12/2020
+			<p class="foottext">
+				(c) Bigoudène & Fun 2020 |
+				<a class="foota" href="MentionsLegales.html">Mention légales</a> |
+				<a class="foota" href="Contact.html">Nous contacter</a> |
+				Mise à jour : 04/12/2020
 			</p>
 		</footer>
 			

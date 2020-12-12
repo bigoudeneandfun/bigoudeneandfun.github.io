@@ -61,20 +61,20 @@
 		<style>
 			
 			h1{
-				padding: 70px;
-				text-align: center;
+				padding: 5%;
+				margin-left: 55% ;
 				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 			}
 			
 			.formulaire {
-			  margin:10px auto ;
-			  width: 400px;
-			  padding: 0px 12px 150px 20px;
+			  margin:5% 55% ;
+			  width: 20%;
+			  padding: 0% 7% 8% 4%;
 			  font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 			}
 
 			.formulaire label{
-			  margin:10px 0 10px 0;
+			  margin:2% 0 2% 0;
 			  padding:0px;
 			  display:block;
 			  font-weight: bold;
@@ -126,11 +126,16 @@
 			  background-color: #FFBABA;
 			}
 			
+			.left{
+				background-color: grey;
+
+			}
+
 			.BigLogo {
 				position :absolute;
-				top: 150px;
-				left : 200px;
-				width: 300px;
+				top: 17%;
+				left : 15%;
+				width: 400px;
 			}
 			
 		</style>
@@ -147,10 +152,10 @@
 
 		<main>
 		
+			<span name="left" class="left"><img src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN" class="BigLogo"/></article>
+			
+			
 			<h1>NOUS CONTACTER</h1>
-			<img src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN" class="BigLogo"/>
-			
-			
 			<form name="contact" class="formulaire" onsubmit="return validateForm()">
 				<label>
 					Votre nom : <span class="required">*</span>
@@ -161,7 +166,7 @@
 				<label>
 					Votre adresse e-mail : <span class="required">*</span>
 				</label>
-				<input type="text" name="email" class="long" placeholder="exemple@bigoud.fr"/>
+				<input type="email" name="email" class="long" placeholder="exemple@bigoud.fr"/>
 				<span class="error" id="errormail"></span>
 
 				<label>

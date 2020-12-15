@@ -7,6 +7,7 @@
 		<title>Nous contacter | Bigoudène & FUN</title>
 
 		<link rel="stylesheet" type="text/css" href="../style.css">
+
 		<script type="text/javascript">
 			function validateForm()                                    
 			{ 
@@ -58,8 +59,8 @@
 				return true; 
 			}
 		</script>
+
 		<style>
-			
 			h1{
 				padding: 5%;
 				margin-left: 55% ;
@@ -83,21 +84,25 @@
 			.formulaire .required{
 			  color:red;
 			}
+
 			.formulaire input[type=submit]{
 			  background: #4eb5f1;
 			  padding: 8px 15px 8px 15px;
 			  border: none;
 			  color: #fff;
 			}
+
 			.formulaire input[type=submit]:hover{
 			  background: #4eb5f1;
 			  box-shadow:none;
 			  -moz-box-shadow:none;
 			  -webkit-box-shadow:none;
 			}
+
 			.formulaire .text{
 			  height: 100px;
 			}
+
 			.formulaire input[type=text], 
 			.formulaire input[type=email],
 			textarea{
@@ -110,9 +115,11 @@
 			  margin:0px;
 			  outline: none;  
 			}
+
 			.formulaire .long{
 			  width: 100%;
 			}
+
 			.formulaire input[type=text]:focus, 
 			.formulaire input[type=email]:focus,
 			.formulaire textarea:focus{
@@ -121,6 +128,7 @@
 			  box-shadow: 0 0 8px #88D5E9;
 			  border: 1px solid #88D5E9;
 			}
+
 			.error{
 			  color: #D8000C;
 			  background-color: #FFBABA;
@@ -131,15 +139,24 @@
 
 			}
 
-			.BigLogo {
+			.biglogo {
 				position :absolute;
-				top: 17%;
+				top: 12%;
 				left : 15%;
 				width: 400px;
 			}
-			
+
+			.coteimg{
+				position: absolute;
+				top: 8%;
+				left: 0%;
+				width: 50%;
+				height: 92%;
+				background: linear-gradient(to right, grey, white);
+			}
 		</style>
 	</head>
+
 	<body>
 		<header> 
 			<nav>
@@ -151,9 +168,11 @@
 		</header>
 
 		<main>
+			<div class="coteimg">
+				<img class="biglogo" src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN"/>
+			</div>
 		
-			<span name="left" class="left"><img src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN" class="BigLogo"/></article>
-			
+			<span name="left" class="left"></article>
 			
 			<h1>NOUS CONTACTER</h1>
 			<form name="contact" class="formulaire" onsubmit="return validateForm()">
@@ -185,7 +204,6 @@
 				<a class="foota" href="MentionsLegales.html">Mention légales</a> |
 				<a class="foota" href="Contact.html">Nous contacter</a> |
 				Mise à jour : 12/12/2020
-		</footer>
-			
+		</footer>	
 	</body>
 </html>

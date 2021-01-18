@@ -8,6 +8,14 @@ main{
 	padding-top: 5px;
 }
 
+h1,h2,h3{
+	text-align:center;
+	font-family: Lato,sans-serif;
+	font-style:normal;
+	font-size:200%;
+	font-weight:600;	
+}
+
 .texte{
 	position:relative;
 	z-index: 4;
@@ -28,14 +36,8 @@ header{
 }
 
 p{
-	font-family: Lato, sans-serif;
-	font-size: 1.1em;
-}
-
-h1,h2,h3{
-	font-size-adjust: inherit;
-	font-family: Lato,sans-serif;
-    font-weight: bold;
+	font-family: Arial;	
+	text-align: justify;
 }
 
 footer{
@@ -53,17 +55,17 @@ footer{
 	color:white;
 }
 
-a.navi{
+.navi{
 	text-align: center;
 	padding:100% 10px;
 	text-decoration:none;
 }
 
-a.inactive{
+.inactive{
 	color: white;
 }
 
-a.navi:hover{
+.navi:hover{
 	background-color: #92acada3;
 	color: #333;
 }
@@ -78,7 +80,8 @@ a.navi:hover{
 	height:100vh;
 	object-fit:cover;
 	object-position:0 60%;
-	margin:0;
+	margin: 0;
+	transform: translateY(2%);
 }
 
 .img{
@@ -101,20 +104,19 @@ a.navi:hover{
 
 .titre{
 	z-index: 1;
+	top:50vh;
+	right:0;
 	position:fixed;
-	top:200px;
-	right:35%;
+	padding-right:50vh;
+	padding-left:50vh;
 	color:white;
 	font-size:400%;
 	font-family: Lato,sans-serif;
 	font-style:normal;
-	font-weight:600;	
+	font-weight:600;
+	margin:0;
 }
 
-.accueil{
-	top:200px;
-	right:35%;
-}
 
 .malo{
 	top:150px;
@@ -138,14 +140,15 @@ a.navi:hover{
 	left: 25%;
 	width:50%;
 	height:85% ;
-	text-align: justify;
 }
-
-.mid{
+	
+.objets{ 
+    position: absolute;
     top: 8%;
-    left: 25%;
-    width: 50%;
-    height: 85%;
+    left: 80%;
+    width: 20%;
+    height: 92%;
+    background-color: rgb(141, 141, 141);
 }
 
 .bandeau{
@@ -159,7 +162,19 @@ a.navi:hover{
 	padding: 1% 25%;
 }
 
+.mid{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
 .center{
+	text-align: center;
+}
+
+.introduction{
+	background:rgb(243, 243, 243);
 	text-align: center;
 }
 
@@ -176,5 +191,4 @@ ul {
 	padding-left:7em;
 	width: 15%;
 	position: absolute;
-
 }

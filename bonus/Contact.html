@@ -8,6 +8,9 @@
 
 		<link rel="stylesheet" type="text/css" href="../style.css">
 
+		<link rel="icon" type="image/png" href="./../ressources/bigoudfun_carre.png" />
+
+
 		<script type="text/javascript">
 			function validateForm()                                    
 			{ 
@@ -62,97 +65,100 @@
 
 		<style>
 			h1{
-				padding: 5%;
-				margin-left: 55% ;
-				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				margin-top: 10%;
+				margin-left: 7.5%;
 			}
-			
 			.formulaire {
-			  margin:5% 55% ;
-			  width: 20%;
-			  padding: 0% 7% 8% 4%;
-			  font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				margin-top: 10%;
+				width: 50%;
+				font-size: 16px;
 			}
 
 			.formulaire label{
-			  margin:2% 0 2% 0;
-			  padding:0px;
-			  display:block;
-			  font-weight: bold;
+				margin:2% 0 2% 0;
+				padding:0px;
+				display:block;
+				font-weight: bold;
 			}
 
 			.formulaire .required{
-			  color:red;
+			  	color:red;
 			}
 
 			.formulaire input[type=submit]{
-			  background: #4eb5f1;
-			  padding: 8px 15px 8px 15px;
-			  border: none;
-			  color: #fff;
+				background: #4eb5f1;
+				padding: 8px 15px 8px 15px;
+				border: none;
+				color: #fff;
 			}
 
 			.formulaire input[type=submit]:hover{
-			  background: #4eb5f1;
-			  box-shadow:none;
-			  -moz-box-shadow:none;
-			  -webkit-box-shadow:none;
+				background: #4eb5f1;
+				box-shadow:none;
+				-moz-box-shadow:none;
+				-webkit-box-shadow:none;
 			}
 
 			.formulaire .text{
-			  height: 100px;
+			  	height: 100px;
 			}
 
 			.formulaire input[type=text], 
 			.formulaire input[type=email],
 			textarea{
-			  resize: none;
-			  box-sizing: border-box;
-			  -webkit-box-sizing: border-box;
-			  -moz-box-sizing: border-box;
-			  border:1px solid #BEBEBE;
-			  padding: 7px;
-			  margin:0px;
-			  outline: none;  
+				resize: none;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				border:1px solid #BEBEBE;
+				padding: 7px;
+				margin:0px;
+				outline: none;  
 			}
 
 			.formulaire .long{
-			  width: 100%;
+			  	width: 100%;
 			}
 
 			.formulaire input[type=text]:focus, 
 			.formulaire input[type=email]:focus,
 			.formulaire textarea:focus{
-			  -moz-box-shadow: 0 0 8px #88D5E9;
-			  -webkit-box-shadow: 0 0 8px #88D5E9;
-			  box-shadow: 0 0 8px #88D5E9;
-			  border: 1px solid #88D5E9;
+				-moz-box-shadow: 0 0 8px #88D5E9;
+				-webkit-box-shadow: 0 0 8px #88D5E9;
+				box-shadow: 0 0 8px #88D5E9;
+				border: 1px solid #88D5E9;
 			}
 
 			.error{
-			  color: #D8000C;
-			  background-color: #FFBABA;
-			}
-			
-			.left{
-				background-color: grey;
-
+				color: #D8000C;
+				background-color: #FFBABA;
 			}
 
 			.biglogo {
-				position :absolute;
-				top: 12%;
-				left : 15%;
-				width: 400px;
+				position :relative;
+				top: 10%;
+				left : 25%;
+				max-width: 40%;
+				height: auto;
 			}
 
 			.coteimg{
-				position: absolute;
-				top: 8%;
-				left: 0%;
+				float: left;
+				padding-top: 7%;
 				width: 50%;
-				height: 92%;
+				height: 50em;
 				background: linear-gradient(to right, grey, white);
+			}
+
+			.coteform{
+				padding-top: 7%;
+				margin-left: 55%;
+				height: 50em;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+
+			.foottext{
+				clear: left;
 			}
 		</style>
 	</head>
@@ -171,31 +177,31 @@
 			<div class="coteimg">
 				<img class="biglogo" src="../ressources/bigoudfun.png" alt="Logo Bidoudène and FUN"/>
 			</div>
-		
-			<span name="left" class="left"></article>
 			
-			<h1>NOUS CONTACTER</h1>
-			<form name="contact" class="formulaire" onsubmit="return validateForm()">
-				<label>
-					Votre nom : <span class="required">*</span>
-				</label>
-				<input type="text" name="name" class="long" placeholder="Nom.."/>
-				<span class="error" id="errorname"></span>
+			<div class="coteform">
+				<h1>NOUS CONTACTER</h1>
+				<form name="contact" class="formulaire" onsubmit="return validateForm()">
+					<label>
+						Votre nom : <span class="required">*</span>
+					</label>
+					<input type="text" name="name" class="long" placeholder="Nom.."/>
+					<span class="error" id="errorname"></span>
 
-				<label>
-					Votre adresse e-mail : <span class="required">*</span>
-				</label>
-				<input type="email" name="email" class="long" placeholder="exemple@bigoud.fr"/>
-				<span class="error" id="errormail"></span>
+					<label>
+						Votre adresse e-mail : <span class="required">*</span>
+					</label>
+					<input type="email" name="email" class="long" placeholder="exemple@bigoud.fr"/>
+					<span class="error" id="errormail"></span>
 
-				<label>
-					Votre message : <span class="required">*</span>
-				</label>
-				<textarea name="message" class="long text" placeholder="Ecrivez ici .."></textarea>
-				<span class="error" id="errormsg"></span>
+					<label>
+						Votre message : <span class="required">*</span>
+					</label>
+					<textarea name="message" class="long text" placeholder="Ecrivez ici .."></textarea>
+					<span class="error" id="errormsg"></span>
 
-				<input type="submit" value="Envoyer"/>
-			</form>
+					<input type="submit" value="Envoyer"/>
+				</form>
+			</div>
 		</main>	
 
 		<footer>
@@ -203,7 +209,7 @@
 				(c) Bigoudène & Fun 2020 |
 				<a class="foota" href="MentionsLegales.html">Mention légales</a> |
 				<a class="foota" href="Contact.html">Nous contacter</a> |
-				Mise à jour : 12/12/2020
+				Mise à jour : 20/01/2021
 		</footer>	
 	</body>
 </html>

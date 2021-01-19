@@ -195,15 +195,18 @@ footer{
 	position: relative;
 	background-color: rgb(39, 39, 39);
 	color: white;
+	display:flex;
 
 }
 .tips{
-	padding: 1% 25%;
+	padding-top: 1%;
+	padding-left: 7%;
+	width: 50%;
 }
 
 .mid{
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
@@ -227,7 +230,9 @@ ul,ol {
 }
 
 .bigoudcarre{
-	padding-left:5%;
-	width: 14%;
-	position: absolute;
+	flex:1;
+	padding-left:3%;
+	padding-top:0.5%;
+	max-width: 15%;
+	height:auto;
 }

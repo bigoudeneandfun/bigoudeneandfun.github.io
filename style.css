@@ -22,6 +22,7 @@ section{
 a{
 	text-decoration:none;
 }
+
 .texte{
 	position:relative;
 	z-index: 4;
@@ -48,7 +49,7 @@ p{
 }
 
 footer{
-	padding: 5px 5px;
+	padding: 1px ;
 	background-color:#333;
 	margin:0;
 	color:white;
@@ -94,7 +95,18 @@ footer{
 	width:100%;
 	height:45vh;
 	object-fit:cover;
+}
 
+.stmalo{
+	object-position:0 10%;
+}
+
+.stmichel{
+	object-position:0 53%;
+}
+
+.broceliande{
+	object-position:0 0;
 }
 
 .button{
@@ -104,6 +116,7 @@ footer{
 	background-color:#333;
 	border-radius:5px;
 }
+
 .button:hover{
 	background-color: #d6d6d6;
 }
@@ -119,6 +132,7 @@ footer{
 .Tbutton:hover{
 	color: #333;
 }
+
 .colonne{
 	display:block;
 	padding:0;	
@@ -163,18 +177,6 @@ footer{
 	transform: scale(1.3);
 }
 
-.stmalo{
-	object-position:0 10%;
-}
-
-.stmichel{
-	object-position:0 53%;
-}
-
-.broceliande{
-	object-position:0 0;
-}
-
 .titre{
 	z-index: 0;
 	top:50vh;
@@ -216,11 +218,27 @@ footer{
 	position: relative;
 	background-color: rgb(39, 39, 39);
 	color: white;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	display: flex;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
+
 .tips{
-	padding: 1% 25%;
+	padding: 1%;
+	padding-left: 7%;
+	width: 50%;
+}
+
+.bigoudcarre{
+	flex: 1;
+	padding-left:3%;
+	max-width: 15%;
+	height: auto;
+}
+
+ul,ol {
+	font-family: lato, sans-serif;
+	font-size: large;
 }
 
 .mid{
@@ -239,11 +257,9 @@ footer{
 	text-align: center;
 }
 
-ul,ol {
-	font-family: lato, sans-serif;
-}
-
 .tab{
+	margin-top: 2%;
+	margin-bottom: 2%;
 	z-index: 4;
 	position: relative;
 }
@@ -253,8 +269,45 @@ ul,ol {
 	top:-10vh;
 	margin-bottom:-10vh;
 }
-.bigoudcarre{
-	padding-left:5%;
-	width: 14%;
-	position: absolute;
+
+.tarifs {
+	border-collapse: collapse;
+	width: 50%;
+	margin:10px auto ;
+	font: 17px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.tarifs label{
+  margin:auto;
+  padding:50px;
+  display:block;
+  font-weight: bold;
+}
+
+thead tr:nth-child(odd){
+	background-color: #333;
+	color:white;
+}
+
+thead tr:nth-child(even){
+	background-color: rgb(66, 66, 66);
+	color:white;
+}
+
+tbody tr:nth-child(odd) {
+	  background-color: #49504e62;
+}
+
+tbody tr:nth-child(even) {
+	  background-color: #ffffff;
+}
+
+th, td{
+	padding:20px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.proverbe{
+	margin-bottom: 2%;
 }

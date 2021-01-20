@@ -9,6 +9,63 @@
 		<link rel="icon" type="image/png" href="./../ressources/bigoudfun_carre.png" />
 
 		<link rel="stylesheet" type="text/css" href="../style.css">
+
+		<style>
+			.titletarif{
+				z-index:4;
+				text-align: center;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+
+			.tarifs {
+				border-collapse: collapse;
+				width: 50%;
+				margin:10px auto ;
+				font: 17px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+
+			.tarifs label{
+			  margin:auto;
+			  padding:50px;
+			  display:block;
+			  font-weight: bold;
+			}
+
+			thead tr:nth-child(odd){
+				background-color: #333;
+				color:white;
+			}
+			thead tr:nth-child(even){
+				background-color: rgb(66, 66, 66);
+				color:white;
+			}
+			tbody tr:nth-child(odd) {
+ 				 background-color: #49504e62;
+			}
+
+			tbody tr:nth-child(even) {
+  				background-color: #ffffff;
+			}
+			th, td{
+				padding:20px;
+				padding-top:10px;
+				padding-bottom: 10px;
+			}
+		</style>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function(){
+						$(".titre").css("opacity", 1 - $(window).scrollTop()/100);
+						if ($(window).scrollTop() > 100){
+							$(".titre").css("display", "none");
+						}else{
+							$(".titre").css("display", "block");
+						}
+				})
+			})
+		</script>
 	</head>
 	
 	<body>
@@ -24,7 +81,7 @@
 		<main>
 			<div>
 				<img class="img broceliande" src="../ressources/broceliande.jpg">
-				<p class="titre broce">LA FORET DE BROCELIANDE</p>
+				<p class="titre titre2">LA FORET DE BROCELIANDE</p>
 			</div>
 			
 			<section class="infos">
@@ -57,6 +114,54 @@
 						<li>Des chaussures de marches</li>
 					</ul>
 				</article>	
+			</section>
+
+			<section class="tab">
+				<h1 class="titletarif">TARIFS</h1>
+				<table class="tarifs">
+					<thead>
+						<tr>
+							<th rowspan="2">Tarif</th>
+							<th colspan="4">Saison</th>
+						</tr>
+						<tr>
+							<th>Printemps</th>
+							<th>Été</th>
+							<th>Automne</th>
+							<th>Hiver</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Tarif plein (adulte)</td>
+							<td>17€</td>
+							<td>20€</td>
+							<td>15€</td>
+							<td>10€</td>
+						</tr>
+						<tr>
+							<td>Tarif Réduit (+12 ans, étudiant, demandeur d'emploi)</td>
+							<td>10€</td>
+							<td>11€</td>
+							<td>8€</td>
+							<td>5€</td>
+						</tr>
+						<tr>
+							<td>Moins de 12 ans</td>
+							<td>5,70€</td>
+							<td>8€</td>
+							<td>3€</td>
+							<td>Gratuit</td>
+						</tr>
+						<tr>
+							<td>Tarif famille (2 adultes et enfants à charge)</td>
+							<td>40,80€</td>
+							<td>43,80€</td>
+							<td>38€</td>
+							<td>35€</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 
 			<section class="infos">

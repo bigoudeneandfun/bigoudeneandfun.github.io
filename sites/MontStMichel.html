@@ -38,6 +38,20 @@
   				background-color: #ffffff;
 			}
 		</style>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function(){
+						$(".titre").css("opacity", 1 - $(window).scrollTop()/100);
+						if ($(window).scrollTop() > 100){
+							$(".titre").css("display", "none");
+						}else{
+							$(".titre").css("display", "block");
+						}
+				})
+			})
+		</script>
 	</head>
 	
 	<body>
@@ -52,7 +66,7 @@
 		<main>
 			<div>
 				<img class="img stmichel" src="../ressources/stmichel.jpg">
-				<p class="titre mich">MONT-SAINT-MICHEL</p>
+				<p class="titre titre2">MONT-SAINT-MICHEL</p>
 			</div>
 
 			<section class="infos">

@@ -9,6 +9,20 @@
 		<link rel="icon" type="image/png" href="./../ressources/bigoudfun_carre.png" />
 
 		<link rel="stylesheet" type="text/css" href="../style.css">
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function(){
+						$(".titre").css("opacity", 1 - $(window).scrollTop()/100);
+						if ($(window).scrollTop() > 100){
+							$(".titre").css("display", "none");
+						}else{
+							$(".titre").css("display", "block");
+						}
+				})
+			})
+		</script>
 	</head>
 	
 	<body>
@@ -24,7 +38,7 @@
 		<main>
 			<div>
 				<img class="img stmalo" src="../ressources/stmalo.jpg">
-				<p class="titre malo">SAINT-MALO</p>
+				<p class="titre titre2">SAINT-MALO</p>
 			</div>
 			
 			<section class="infos">
@@ -44,9 +58,9 @@
 				</article>
 			</section>
 
-			<div class="bandeau">
+			<section class="bandeau">
 				<img class="bigoudcarre"  src="../ressources/bigoudfun_carre2.png" alt="coucou de bigoud">
-				<div class="tips">
+				<article class="tips">
 					<h2 class="center">Les astuces de Bigoudène !</h2>
 					<p class="center">Vous pouvez venir à St Malo par de nombreux moyens..</p>
 					<ul>
@@ -55,8 +69,8 @@
 						<li>Avions low-cost à l'Aéroport de Dinard, à 13km de la ville </li>
 						<li>Et vous pouvez également aborder au port si vous possédez un bateau !</li>
 					</ul>
-				</div>	
-			</div>
+				</article>	
+			</section>
 
 			<section class="infos">
 				<article>

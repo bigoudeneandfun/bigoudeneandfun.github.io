@@ -26,9 +26,7 @@ a{
 	position:relative;
 	z-index: 4;
 }
-.centre{
-	text-align: center;
-}
+
 header{
 	z-index: 10;
 	margin: 0;
@@ -133,11 +131,10 @@ footer{
 .icon{
 	display:block;
 	margin:5vh;
-	margin-left:13vh;
-	margin-right:13vh;
+	margin-left:11%;
 	float:left;
 	padding:0;
-	z-index:10;
+	z-index:4;
 	width:auto;
 	height:auto;
 	overflow: hidden;
@@ -179,7 +176,7 @@ footer{
 }
 
 .titre{
-	z-index: 1;
+	z-index: 0;
 	top:50vh;
 	width:100%;
 	margin:auto;
@@ -192,7 +189,7 @@ footer{
 	text-align: center;
 }
 
-.titre2{
+.titre.v2{
 	top:10vw;
 }
 
@@ -219,7 +216,8 @@ footer{
 	position: relative;
 	background-color: rgb(39, 39, 39);
 	color: white;
-
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 .tips{
 	padding: 1% 25%;
